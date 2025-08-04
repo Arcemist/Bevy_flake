@@ -1,5 +1,5 @@
 [package]
-name = "rust_flake"
+name = "bevy_flake"
 version = "0.1.0"
 authors = ["Arcemist <arcemisto@gmail.com>"]
 edition = "2018"
