@@ -21,7 +21,15 @@
       devShells.default = with pkgs; mkShell {
         buildInputs = [
 	  rust-bin.stable.latest.default
+	  pkgs.alsa-lib.dev
+	  pkgs.udev.dev
 	];
+
+	nativeBuildInputs = [
+          pkgs.pkg-config
+	];
+
+        cargoLock = "Cargo.lock";
 
         # For convinience
 	# Need fish in normal user enviroment
